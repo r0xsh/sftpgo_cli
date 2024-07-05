@@ -42,7 +42,7 @@ export default class Client {
       length: 16,
       numbers: true,
       excludeSimilarCharacters: true,
-      symbols: true,
+      symbols: false,
       strict: true,
     });
     const { data } = await this.axios.post("/api/v2/users/", {
